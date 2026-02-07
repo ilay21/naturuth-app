@@ -1,13 +1,9 @@
-import { NextResponse } from 'next/server';
-import { Locale, NextIntlMiddleware } from 'next-intl';
+import createMiddleware from 'next-intl/middleware';
 
-const supportedLocales: Locale[] = ['en', 'es', 'fr']; // Add supported locales here
+import { routing } from './i18n/routing';
 
-// Middleware function to handle language routing
-export function middleware(request: Request) {
-    return NextIntlMiddleware(request, { supportedLocales });
-}
+export default createMiddleware(routing);
 
 export const config = {
-    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: ['/', '/(he|en)/:path*'],
 };

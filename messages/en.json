@@ -1,1 +1,164 @@
-{\n  \"welcome_message\": \"Welcome to the Naturuth app!\",\n  \"app_description\": \"Track your nature experiences and connect with nature enthusiasts.\",\n  \"button_submit\": \"Submit\",\n  \"button_cancel\": \"Cancel\",\n  \"error_message\": \"Something went wrong, please try again.\"\n}
+{
+  "metadata": {
+    "title": "NatuRuth | Ruth Weizman Azulai - Naturopath & Registered Nurse",
+    "description": "Professional naturopathic treatment for chronic fatigue, sleep disorders, and metabolic syndrome. Root-cause diagnosis, personalized nutritional counseling, aromatherapy, and close personal support."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "sleep": "Sleep & Health",
+    "aromatherapy": "Aromatherapy",
+    "services": "Services",
+    "workshops": "Workshops",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "NatuRuth",
+    "subtitle": "Naturopathy & Aromatherapy",
+    "tagline": "A small step toward a big change",
+    "cta": "Book a Consultation"
+  },
+  "about": {
+    "sectionTitle": "Who Am I",
+    "name": "Ruth Weizman Azulai",
+    "credentials": "Naturopath (N.D) & Registered Nurse (B.S.N)",
+    "specialization": "Specializing in the treatment of chronic fatigue/exhaustion, sleep disorders, and metabolic syndrome (diabetes, high blood pressure, obesity, insulin resistance).",
+    "approach": "I provide professional, root-cause-based diagnosis, personalized nutritional counseling, supplements, medicinal herbs, aromatherapy extracts, Bach flower remedies, Hopi ear candles, reflexology, and personal follow-up.",
+    "targetAudience": "Women over the age of 40 who are experiencing the above symptoms are welcome to contact me to receive high-quality, professional guidance with a detailed, comprehensive treatment plan and close personal support.",
+    "mission": "I view my work as a mission, just as I did when working as a nurse. I deeply love the field of natural healing.",
+    "integration": "I integrate naturopathic treatments with conventional medicine, based on my medical knowledge and experience.",
+    "smallStep": "A small step toward a big change!"
+  },
+  "sleep": {
+    "sectionTitle": "Sleep, Weight & Stress — What's the Connection?",
+    "intro": "Sleep is critical to both physical and mental health. It affects concentration, memory, mood, the immune system, growth, metabolism, and emotional balance.",
+    "lackOfSleep": "Lack of sleep can lead to attention problems, anxiety, depression, weight gain, cognitive impairment, and an increased risk of chronic illness.",
+    "renewal": "Sleep allows the body and brain to renew themselves, perform metabolic \"cleaning,\" and create neural connections—processes that are essential for proper functioning.",
+    "cyclesTitle": "Stages of Sleep — The Sleep Cycle",
+    "cyclesIntro": "Each night includes 4–6 cycles, each consisting of the following stages:",
+    "lightSleep": {
+      "title": "Light Sleep (Stages 1–2)",
+      "description": "The transition from wakefulness to sleep. Breathing and heart rate slow down, and body temperature drops. In Stage 2, the brain begins organizing memories and information from the day."
+    },
+    "deepSleep": {
+      "title": "Deep Sleep (Stage 3)",
+      "description": "This is the most restorative stage. The body releases growth hormone, builds muscle, repairs tissues, and strengthens the immune system. It is very difficult to wake up from this stage."
+    },
+    "remSleep": {
+      "title": "REM Sleep (Dream Sleep)",
+      "description": "The brain is highly active (similar to wakefulness), the eyes move rapidly beneath the eyelids, and the muscles are temporarily paralyzed so we do not physically act out our dreams. This stage is critical for emotional processing and memory consolidation."
+    },
+    "processesTitle": "Key Physiological Processes",
+    "detox": {
+      "title": "Brain \"Detoxification\"",
+      "description": "Recent studies (as of 2026) continue to confirm that during sleep, the brain clears metabolic waste products that accumulate during the day—a process essential for preventing neurological diseases."
+    },
+    "hormones": {
+      "title": "Hormonal Balance",
+      "description": "The body balances hunger and satiety hormones (ghrelin and leptin). In addition, cortisol (the stress hormone) decreases at the beginning of the night and rises toward morning to help us wake up. Adenosine also plays an important role and contributes to feelings of fatigue."
+    },
+    "melatonin": "As preparation for sleep, the brain secretes melatonin (the \"darkness hormone\"), which is essential for sleep. During stress, cortisol levels rise and interfere with entering the sleep process.",
+    "screenWarning": "Tired in front of screens and snacking? Think about what's happening to your body, your brain, and all the nightly cleansing processes that are being delayed and disrupted due to hormonal imbalance."
+  },
+  "aromatherapy": {
+    "sectionTitle": "Aromatherapy Treatment",
+    "intro": "As part of my treatments, I blend and compound aromatherapy essential oil formulas according to the patient's condition, such as oils, creams, ointments, or perfumes.",
+    "benefits": "Aromatherapy has many health benefits (scientifically and research-proven) and works immediately due to the unique properties of essential oil extracts—through inhalation, massage, baths, soaking, and more.",
+    "synergy": "Each oil has its own unique characteristics. When combined with other oils, the blend gains a different and special therapeutic effect. The synergy is personalized and varies from person to person and from treatment to treatment.",
+    "results": "The effects are noticeable from the very first session—calmness, improved sleep, pain relief, and more—according to reports from patients.",
+    "babies": "The oils are generally suitable for most of the population; however, for infants there are specific oils that can be used, such as chamomile, lavender, myrtle, eucalyptus radiata, and ravintsara.",
+    "consultationRequired": "Use of essential oils is only after professional consultation!!",
+    "warningsTitle": "Warnings",
+    "warning1": "Oils must be used for massage or application only when diluted with carrier oils.",
+    "warning2": "Pregnant women: not all oils are suitable.",
+    "warning3": "Use caution with essential oils for older adults. Lower dosages should be considered. Just as medications remain in the body longer in older age, aromatherapy oils also take longer to be eliminated. Therefore, professional consultation is mandatory at every stage of use and purchase.",
+    "purchaseWarning": "The topic of purchasing oils is no less important. I recommend buying only from sources recommended by professionals. Poor-quality oils can cause headaches, nausea, and more. Impure oils may not help at all.",
+    "summary": "In summary: Aromatherapy oils can heal and assist in many conditions when used with proper guidance and professional consultation. On the other hand, incorrect use without guidance may not help and could even cause harm.",
+    "aiDisclaimer": "One more thing: Today, with AI, anyone can ask questions and get answers—but please pay attention: AI can also make mistakes, and it does not replace consultation with a professional.",
+    "medicalDisclaimer": "This treatment does not replace medical care.",
+    "closing": "Enjoy, with the integration of aromatherapy."
+  },
+  "services": {
+    "sectionTitle": "Services",
+    "items": {
+      "diagnosis": {
+        "title": "Professional Root-Cause Diagnosis",
+        "description": "In-depth diagnosis focusing on identifying the root cause of symptoms"
+      },
+      "nutrition": {
+        "title": "Personalized Nutritional Counseling",
+        "description": "Custom nutrition plan tailored to your health condition"
+      },
+      "supplements": {
+        "title": "Supplements",
+        "description": "Targeted research-based supplement recommendations"
+      },
+      "herbs": {
+        "title": "Medicinal Herbs",
+        "description": "Traditional medicinal herbs to support healing processes"
+      },
+      "aromatherapy": {
+        "title": "Aromatherapy Extracts",
+        "description": "Custom-blended essential oil formulas"
+      },
+      "bach": {
+        "title": "Bach Flower Remedies",
+        "description": "Bach flower therapy for emotional and mental balance"
+      },
+      "hopi": {
+        "title": "Hopi Ear Candles",
+        "description": "Gentle and soothing Hopi ear candle treatment"
+      },
+      "reflexology": {
+        "title": "Reflexology",
+        "description": "Reflexology treatment to improve body functions"
+      },
+      "followup": {
+        "title": "Close Personal Follow-up",
+        "description": "Continuous monitoring and support throughout the treatment process"
+      }
+    }
+  },
+  "workshops": {
+    "sectionTitle": "Workshops & Lectures",
+    "intro": "I conduct aromatherapy workshops and deliver interactive lectures on a variety of topics:",
+    "topics": {
+      "winter": "Preparing the body for winter",
+      "sleep": "Sleep and tips for quality sleep",
+      "meditation": "Breathing meditations",
+      "aromatherapy": "Aromatherapy",
+      "fatigue": "Chronic fatigue syndrome and natural treatment approaches, and more"
+    },
+    "booking": "You can contact me to schedule lectures or workshops for private groups in a warm, intimate atmosphere.",
+    "formats": "Workshop options include various formats:",
+    "formatDetails": "Two hours, three hours, an introduction with a short lecture, light refreshments, and hands-on preparation of a personal cream, ointment, perfume, massage oils, and more."
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "subtitle": "Feel free to reach out to schedule a consultation or ask any question",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "An error occurred. Please try again or contact me directly."
+    },
+    "whatsapp": "Send a WhatsApp Message",
+    "phone": "/* PLACEHOLDER: Enter phone number */",
+    "email": "/* PLACEHOLDER: Enter email address */",
+    "location": "/* PLACEHOLDER: Enter address/service area */"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "disclaimer": "The information on this website does not constitute medical advice and does not replace professional medical treatment.",
+    "builtWith": "Built with love"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "bookNow": "Book a Consultation",
+    "backToTop": "Back to Top"
+  }
+}

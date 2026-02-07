@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-brown;
+  }
+
+  ::selection {
+    @apply bg-sage-200 text-sage-900;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-sage-800 mb-8;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-beige-100 p-6
+      transition-shadow duration-300 hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3
+      bg-sage-600 text-white rounded-full font-medium
+      transition-all duration-300 hover:bg-sage-700 hover:shadow-lg
+      focus:outline-none focus:ring-2 focus:ring-sage-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3
+      bg-white text-sage-700 border-2 border-sage-300 rounded-full font-medium
+      transition-all duration-300 hover:bg-sage-50 hover:border-sage-400
+      focus:outline-none focus:ring-2 focus:ring-sage-400 focus:ring-offset-2;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3
+      bg-green-500 text-white rounded-full font-medium
+      transition-all duration-300 hover:bg-green-600 hover:shadow-lg
+      focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2;
+  }
+}

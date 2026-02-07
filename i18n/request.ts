@@ -1,9 +1,16 @@
-import { createIntlMiddleware } from 'next-intl';
+import { getRequestConfig } from 'next-intl/server';
 
-const i18nMiddleware = createIntlMiddleware({
-  locales: ['en', 'fr', 'es'], // add your supported locales
-  defaultLocale: 'en',
-  // additional configuration options
+import { routing } from './routing';
+
+export default getRequestConfig(async ({ requestLocale }) => {
+  let locale = await requestLocale;
+
+  if (!locale || !routing.locales.includes(locale as 'he' | 'en')) {
+    locale = routing.defaultLocale;
+  }
+
+  return {
+    locale,
+    messages: (await import(`@/messages/${locale}.json`)).default,
+  };
 });
-
-export default i18nMiddleware;
