@@ -41,7 +41,7 @@ export default function Header() {
           href="#"
           className="text-xl font-bold text-sage-800 hover:text-sage-600 transition-colors"
         >
-          NatuRuth
+          {t('brand')}
         </a>
 
         {/* Desktop nav */}

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "NatuRuth | Ruth Weizman Azulai - Naturopath & Registered Nurse",
+    "title": "Ruth Weizman Azulay - Naturopath & Registered Nurse",
     "description": "Professional naturopathic treatment for chronic fatigue, sleep disorders, and metabolic syndrome. Root-cause diagnosis, personalized nutritional counseling, aromatherapy, and close personal support."
   },
   "nav": {
@@ -10,20 +10,21 @@
     "aromatherapy": "Aromatherapy",
     "services": "Services",
     "workshops": "Workshops",
-    "contact": "Contact"
+    "contact": "Contact",
+    "brand": "Ruth Weizman Azulay"
   },
   "hero": {
-    "title": "NatuRuth",
-    "subtitle": "Naturopathy & Aromatherapy",
+    "title": "Ruth Weizman Azulay",
+    "subtitle": "Naturopath & Nurse",
     "tagline": "A small step toward a big change",
     "cta": "Book a Consultation"
   },
   "about": {
     "sectionTitle": "Who Am I",
-    "name": "Ruth Weizman Azulai",
+    "name": "Ruth Weizman Azulay",
     "credentials": "Naturopath (N.D) & Registered Nurse (B.S.N)",
     "specialization": "Specializing in the treatment of chronic fatigue/exhaustion, sleep disorders, and metabolic syndrome (diabetes, high blood pressure, obesity, insulin resistance).",
-    "approach": "I provide professional, root-cause-based diagnosis, personalized nutritional counseling, supplements, medicinal herbs, aromatherapy extracts, Bach flower remedies, Hopi ear candles, reflexology, and personal follow-up.",
+    "approach": "I provide professional, root-cause-based diagnosis, personalized nutritional counseling, supplements, medicinal herbs, aromatherapy extracts, Bach flower essences, Nopi candles, reflexology, and personal follow-up.",
     "targetAudience": "Women over the age of 40 who are experiencing the above symptoms are welcome to contact me to receive high-quality, professional guidance with a detailed, comprehensive treatment plan and close personal support.",
     "mission": "I view my work as a mission, just as I did when working as a nurse. I deeply love the field of natural healing.",
     "integration": "I integrate naturopathic treatments with conventional medicine, based on my medical knowledge and experience.",
@@ -62,7 +63,7 @@
   },
   "aromatherapy": {
     "sectionTitle": "Aromatherapy Treatment",
-    "intro": "As part of my treatments, I blend and compound aromatherapy essential oil formulas according to the patient's condition, such as oils, creams, ointments, or perfumes.",
+    "intro": "As part of my treatments, I formulate aromatherapy essential oil formulas according to the patient's condition, such as oils, creams, ointments, or perfumes.",
     "benefits": "Aromatherapy has many health benefits (scientifically and research-proven) and works immediately due to the unique properties of essential oil extracts—through inhalation, massage, baths, soaking, and more.",
     "synergy": "Each oil has its own unique characteristics. When combined with other oils, the blend gains a different and special therapeutic effect. The synergy is personalized and varies from person to person and from treatment to treatment.",
     "results": "The effects are noticeable from the very first session—calmness, improved sleep, pain relief, and more—according to reports from patients.",
@@ -102,12 +103,12 @@
         "description": "Custom-blended essential oil formulas"
       },
       "bach": {
-        "title": "Bach Flower Remedies",
-        "description": "Bach flower therapy for emotional and mental balance"
+        "title": "Bach Flower Essences",
+        "description": "Bach flower essences for emotional and mental balance"
       },
       "hopi": {
-        "title": "Hopi Ear Candles",
-        "description": "Gentle and soothing Hopi ear candle treatment"
+        "title": "Nopi Candles",
+        "description": "Gentle and soothing Nopi candle treatment"
       },
       "reflexology": {
         "title": "Reflexology",
@@ -154,7 +155,8 @@
   "footer": {
     "rights": "All rights reserved",
     "disclaimer": "The information on this website does not constitute medical advice and does not replace professional medical treatment.",
-    "builtWith": "Built with love"
+    "builtWith": "Built with love",
+    "brand": "Ruth Weizman Azulay"
   },
   "common": {
     "learnMore": "Learn More",
