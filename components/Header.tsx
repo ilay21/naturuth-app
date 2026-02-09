@@ -39,7 +39,11 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-bold text-sage-800 hover:text-sage-600 transition-colors"
+          className={`text-xl font-bold transition-colors ${
+            isScrolled
+              ? 'text-sage-800 hover:text-sage-600'
+              : 'text-white hover:text-white/80'
+          }`}
         >
           {t('brand')}
         </a>
@@ -50,20 +54,28 @@ export default function Header() {
             <a
               key={key}
               href={href}
-              className="text-sm font-medium text-brown-light hover:text-sage-600 transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                isScrolled
+                  ? 'text-brown-light hover:text-sage-600'
+                  : 'text-white/90 hover:text-white'
+              }`}
             >
               {t(key)}
             </a>
           ))}
-          <LanguageSwitcher />
+          <LanguageSwitcher isScrolled={isScrolled} />
         </div>
 
         {/* Mobile menu button */}
         <div className="flex items-center gap-3 md:hidden">
-          <LanguageSwitcher />
+          <LanguageSwitcher isScrolled={isScrolled} />
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-brown hover:text-sage-600 transition-colors"
+            className={`p-2 transition-colors ${
+              isScrolled
+                ? 'text-brown hover:text-sage-600'
+                : 'text-white hover:text-white/80'
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}

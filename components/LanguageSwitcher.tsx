@@ -3,7 +3,7 @@
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: boolean }) {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -18,8 +18,11 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={switchLocale}
-      className="px-3 py-1.5 text-sm font-medium rounded-lg border border-sage-300
-        text-sage-700 hover:bg-sage-50 transition-colors duration-200"
+      className={`px-3 py-1.5 text-sm font-medium rounded-lg border transition-colors duration-200 ${
+        isScrolled
+          ? 'border-sage-300 text-sage-700 hover:bg-sage-50'
+          : 'border-white/50 text-white hover:bg-white/10'
+      }`}
       aria-label={locale === 'he' ? 'Switch to English' : 'עברית'}
     >
       {locale === 'he' ? 'EN' : 'עב'}
