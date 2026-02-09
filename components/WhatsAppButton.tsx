@@ -6,8 +6,7 @@ import { useTranslations } from 'next-intl';
 export default function WhatsAppButton() {
   const t = useTranslations('contact');
 
-  /* PLACEHOLDER: Replace with Ruth's actual WhatsApp number (international format, no +) */
-  const WHATSAPP_NUMBER = '972XXXXXXXXX';
+  const WHATSAPP_NUMBER = '972539311578';
 
   return (
     <a

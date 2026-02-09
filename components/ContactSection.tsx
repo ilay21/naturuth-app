@@ -43,8 +43,7 @@ export default function ContactSection() {
     }
   };
 
-  /* PLACEHOLDER: Replace with Ruth's actual WhatsApp number (international format, no +) */
-  const WHATSAPP_NUMBER = '972XXXXXXXXX';
+  const WHATSAPP_NUMBER = '972539311578';
 
   return (
     <section id="contact" className="section-padding bg-gradient-to-b from-cream to-sage-50">
