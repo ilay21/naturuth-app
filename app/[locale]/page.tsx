@@ -4,6 +4,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Reviews from '@/components/Reviews';
 import Services from '@/components/Services';
 import SleepScience from '@/components/SleepScience';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Aromatherapy />
         <Services />
         <Workshops />
+        <Reviews />
         <ContactSection />
       </main>
       <Footer />

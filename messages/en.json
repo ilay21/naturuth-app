@@ -150,7 +150,39 @@
     "whatsapp": "Send a WhatsApp Message",
     "phone": "053-931-1578",
     "email": "/* PLACEHOLDER: Enter email address */",
+    "locationLabel": "Location",
     "location": "Henri Kendel St 10, 126"
+  },
+  "reviews": {
+    "sectionTitle": "What People Say",
+    "rating": "5.0 on Google",
+    "viewAll": "All reviews",
+    "items": [
+      {
+        "name": "Korin Ben Shabbat",
+        "text": "I wholeheartedly recommend Ruth — professional and thorough, she gets to the root of the problem and treats it, using medicinal herbs that help heal the body and soul. Ruth's reflexology treatments are among the best I've experienced. She is also a warm, cheerful, and radiant person. Highly recommended!",
+        "rating": 5,
+        "timeAgo": "2 months ago"
+      },
+      {
+        "name": "Talia Krouani",
+        "text": "Ruth is an amazing practitioner. I received reflexology treatment and excellent nutritional counseling. I was impressed by her professionalism and vast knowledge, her patience and availability. She helped me tremendously, all in a warm atmosphere and with a smile.",
+        "rating": 5,
+        "timeAgo": "2 months ago"
+      },
+      {
+        "name": "Tehila Shelly",
+        "text": "I highly recommend Ruth — she is a very warm and pleasant person. I participated in an aromatherapy workshop and gained great value. I truly recommend it to anyone who values themselves.",
+        "rating": 5,
+        "timeAgo": "2 months ago"
+      },
+      {
+        "name": "Rachel Sabag",
+        "text": "About a year and a half ago I suffered from stomach acidity, pain, and discomfort. A friend suggested I contact Ruth. From the very first meeting there was an amazing connection. Ruth recommended a treatment I've been following for a year and a half. My health improved dramatically — the unpleasant feelings disappeared, sleep issues were resolved. Ruth is an incredible naturopath — professional, pleasant, attentive, and always available for questions and guidance. I highly recommend her.",
+        "rating": 5,
+        "timeAgo": "2 months ago"
+      }
+    ]
   },
   "footer": {
     "rights": "All rights reserved",

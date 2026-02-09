@@ -43,7 +43,10 @@ export default function ContactSection() {
     }
   };
 
+  const PHONE_NUMBER = '+972539311578';
   const WHATSAPP_NUMBER = '972539311578';
+  const GOOGLE_MAPS_QUERY = encodeURIComponent('הנרי קנדל 10, באר שבע');
+  const GOOGLE_BUSINESS_URL = 'https://share.google/RzBWDU3iWErKKk74J';
 
   return (
     <section id="contact" className="section-padding bg-gradient-to-b from-cream to-sage-50">
@@ -165,15 +168,15 @@ export default function ContactSection() {
           {/* Contact info + WhatsApp */}
           <div className="space-y-6">
             <div className="card space-y-5">
-              <div className="flex items-center gap-4">
+              <a href={`tel:${PHONE_NUMBER}`} className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-sage-100 flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-sage-600" />
                 </div>
                 <div>
                   <p className="text-sm text-brown-light">{t('form.phone')}</p>
-                  <p className="font-medium text-brown">{t('phone')}</p>
+                  <p className="font-medium text-brown group-hover:text-sage-600 transition-colors">{t('phone')}</p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-lavender-100 flex items-center justify-center shrink-0">
@@ -185,16 +188,36 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <a
+                href={GOOGLE_BUSINESS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 group"
+              >
                 <div className="w-10 h-10 rounded-xl bg-beige-100 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-beige-600" />
                 </div>
                 <div>
-                  <p className="text-sm text-brown-light">Location</p>
-                  <p className="font-medium text-brown">{t('location')}</p>
+                  <p className="text-sm text-brown-light">{t('locationLabel')}</p>
+                  <p className="font-medium text-brown group-hover:text-sage-600 transition-colors">{t('location')}</p>
                 </div>
-              </div>
+              </a>
             </div>
+
+            {/* Mini map */}
+            <a
+              href={GOOGLE_BUSINESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            >
+              <iframe
+                src={`https://maps.google.com/maps?q=${GOOGLE_MAPS_QUERY}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                className="w-full h-48 pointer-events-none"
+                loading="lazy"
+                title="Location map"
+              />
+            </a>
 
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
