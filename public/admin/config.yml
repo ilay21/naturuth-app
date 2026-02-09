@@ -1,0 +1,507 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: hebrew
+    label: "עברית"
+    files:
+      - name: he
+        label: "תוכן בעברית"
+        file: messages/he.json
+        format: json
+        fields:
+          - label: "מטא-דאטה (SEO)"
+            name: metadata
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת האתר", name: title, widget: string }
+              - { label: "תיאור האתר", name: description, widget: text }
+
+          - label: "תפריט ניווט"
+            name: nav
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "דף הבית", name: home, widget: string }
+              - { label: "אודות", name: about, widget: string }
+              - { label: "שינה ובריאות", name: sleep, widget: string }
+              - { label: "ארומתרפיה", name: aromatherapy, widget: string }
+              - { label: "שירותים", name: services, widget: string }
+              - { label: "סדנאות", name: workshops, widget: string }
+              - { label: "צרי קשר", name: contact, widget: string }
+              - { label: "שם המותג", name: brand, widget: string }
+
+          - label: "באנר ראשי (Hero)"
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת ראשית", name: title, widget: string }
+              - { label: "תיאור מקצועי", name: subtitle, widget: string }
+              - { label: "סלוגן", name: tagline, widget: string }
+              - { label: "כפתור פעולה", name: cta, widget: string }
+
+          - label: "אודות"
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - { label: "שם", name: name, widget: string }
+              - { label: "תעודות והסמכות", name: credentials, widget: string }
+              - { label: "התמחות", name: specialization, widget: text }
+              - { label: "גישה טיפולית", name: approach, widget: text }
+              - { label: "קהל יעד", name: targetAudience, widget: text }
+              - { label: "שליחות", name: mission, widget: text }
+              - { label: "שילוב רפואה", name: integration, widget: text }
+              - { label: "צעד קטן", name: smallStep, widget: string }
+
+          - label: "שינה ובריאות"
+            name: sleep
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - { label: "הקדמה", name: intro, widget: text }
+              - { label: "חוסר שינה", name: lackOfSleep, widget: text }
+              - { label: "התחדשות", name: renewal, widget: text }
+              - { label: "כותרת מחזורי שינה", name: cyclesTitle, widget: string }
+              - { label: "הקדמה למחזורים", name: cyclesIntro, widget: string }
+              - label: "שינה קלה"
+                name: lightSleep
+                widget: object
+                fields:
+                  - { label: "כותרת", name: title, widget: string }
+                  - { label: "תיאור", name: description, widget: text }
+              - label: "שינה עמוקה"
+                name: deepSleep
+                widget: object
+                fields:
+                  - { label: "כותרת", name: title, widget: string }
+                  - { label: "תיאור", name: description, widget: text }
+              - label: "שינת REM"
+                name: remSleep
+                widget: object
+                fields:
+                  - { label: "כותרת", name: title, widget: string }
+                  - { label: "תיאור", name: description, widget: text }
+              - { label: "כותרת תהליכים", name: processesTitle, widget: string }
+              - label: "ניקוי רעלים"
+                name: detox
+                widget: object
+                fields:
+                  - { label: "כותרת", name: title, widget: string }
+                  - { label: "תיאור", name: description, widget: text }
+              - label: "איזון הורמונלי"
+                name: hormones
+                widget: object
+                fields:
+                  - { label: "כותרת", name: title, widget: string }
+                  - { label: "תיאור", name: description, widget: text }
+              - { label: "מלטונין", name: melatonin, widget: text }
+              - { label: "אזהרת מסכים", name: screenWarning, widget: text }
+
+          - label: "ארומתרפיה"
+            name: aromatherapy
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - { label: "הקדמה", name: intro, widget: text }
+              - { label: "יתרונות", name: benefits, widget: text }
+              - { label: "סינרגיה", name: synergy, widget: text }
+              - { label: "תוצאות", name: results, widget: text }
+              - { label: "תינוקות", name: babies, widget: text }
+              - { label: "דרישת ייעוץ", name: consultationRequired, widget: string }
+              - { label: "כותרת אזהרות", name: warningsTitle, widget: string }
+              - { label: "אזהרה 1 — דילול", name: warning1, widget: text }
+              - { label: "אזהרה 2 — הריון", name: warning2, widget: string }
+              - { label: "אזהרה 3 — מבוגרים", name: warning3, widget: text }
+              - { label: "אזהרת רכישה", name: purchaseWarning, widget: text }
+              - { label: "סיכום", name: summary, widget: text }
+              - { label: "הערת בינה מלאכותית", name: aiDisclaimer, widget: text }
+              - { label: "הערה רפואית", name: medicalDisclaimer, widget: string }
+              - { label: "סיום", name: closing, widget: string }
+
+          - label: "שירותים"
+            name: services
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - label: "רשימת שירותים"
+                name: items
+                widget: object
+                fields:
+                  - label: "אבחון שורשי"
+                    name: diagnosis
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "ייעוץ תזונתי"
+                    name: nutrition
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "תוספי תזונה"
+                    name: supplements
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "צמחי מרפא"
+                    name: herbs
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "ארומתרפיה"
+                    name: aromatherapy
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "תמציות באך"
+                    name: bach
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "נרות נופי"
+                    name: hopi
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "רפלקסולוגיה"
+                    name: reflexology
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+                  - label: "ליווי אישי"
+                    name: followup
+                    widget: object
+                    fields:
+                      - { label: "כותרת", name: title, widget: string }
+                      - { label: "תיאור", name: description, widget: text }
+
+          - label: "סדנאות והרצאות"
+            name: workshops
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - { label: "הקדמה", name: intro, widget: text }
+              - label: "נושאים"
+                name: topics
+                widget: object
+                fields:
+                  - { label: "הכנה לחורף", name: winter, widget: string }
+                  - { label: "שינה", name: sleep, widget: string }
+                  - { label: "מדיטציה", name: meditation, widget: string }
+                  - { label: "ארומתרפיה", name: aromatherapy, widget: string }
+                  - { label: "עייפות כרונית", name: fatigue, widget: string }
+              - { label: "הזמנה", name: booking, widget: text }
+              - { label: "פורמטים", name: formats, widget: string }
+              - { label: "פרטי הפורמט", name: formatDetails, widget: text }
+
+          - label: "יצירת קשר"
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "כותרת הסקשן", name: sectionTitle, widget: string }
+              - { label: "כותרת משנה", name: subtitle, widget: string }
+              - label: "טופס"
+                name: form
+                widget: object
+                fields:
+                  - { label: "שם", name: name, widget: string }
+                  - { label: "אימייל", name: email, widget: string }
+                  - { label: "טלפון", name: phone, widget: string }
+                  - { label: "הודעה", name: message, widget: string }
+                  - { label: "כפתור שליחה", name: submit, widget: string }
+                  - { label: "טקסט שליחה", name: sending, widget: string }
+                  - { label: "הודעת הצלחה", name: success, widget: text }
+                  - { label: "הודעת שגיאה", name: error, widget: text }
+              - { label: "כפתור וואטסאפ", name: whatsapp, widget: string }
+              - { label: "טלפון", name: phone, widget: string }
+              - { label: "אימייל", name: email, widget: string }
+              - { label: "מיקום", name: location, widget: string }
+
+          - label: "פוטר"
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "זכויות", name: rights, widget: string }
+              - { label: "הבהרה רפואית", name: disclaimer, widget: text }
+              - { label: "נבנה באהבה", name: builtWith, widget: string }
+              - { label: "שם המותג", name: brand, widget: string }
+
+          - label: "כללי"
+            name: common
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "קראי עוד", name: learnMore, widget: string }
+              - { label: "קבעי פגישה", name: bookNow, widget: string }
+              - { label: "חזרה למעלה", name: backToTop, widget: string }
+
+  - name: english
+    label: "English"
+    files:
+      - name: en
+        label: "English Content"
+        file: messages/en.json
+        format: json
+        fields:
+          - label: "Metadata (SEO)"
+            name: metadata
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Site Title", name: title, widget: string }
+              - { label: "Site Description", name: description, widget: text }
+
+          - label: "Navigation"
+            name: nav
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Home", name: home, widget: string }
+              - { label: "About", name: about, widget: string }
+              - { label: "Sleep & Health", name: sleep, widget: string }
+              - { label: "Aromatherapy", name: aromatherapy, widget: string }
+              - { label: "Services", name: services, widget: string }
+              - { label: "Workshops", name: workshops, widget: string }
+              - { label: "Contact", name: contact, widget: string }
+              - { label: "Brand Name", name: brand, widget: string }
+
+          - label: "Hero Banner"
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Main Title", name: title, widget: string }
+              - { label: "Professional Description", name: subtitle, widget: string }
+              - { label: "Tagline", name: tagline, widget: string }
+              - { label: "Call to Action", name: cta, widget: string }
+
+          - label: "About"
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - { label: "Name", name: name, widget: string }
+              - { label: "Credentials", name: credentials, widget: string }
+              - { label: "Specialization", name: specialization, widget: text }
+              - { label: "Approach", name: approach, widget: text }
+              - { label: "Target Audience", name: targetAudience, widget: text }
+              - { label: "Mission", name: mission, widget: text }
+              - { label: "Medical Integration", name: integration, widget: text }
+              - { label: "Small Step", name: smallStep, widget: string }
+
+          - label: "Sleep & Health"
+            name: sleep
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - { label: "Introduction", name: intro, widget: text }
+              - { label: "Lack of Sleep", name: lackOfSleep, widget: text }
+              - { label: "Renewal", name: renewal, widget: text }
+              - { label: "Cycles Title", name: cyclesTitle, widget: string }
+              - { label: "Cycles Intro", name: cyclesIntro, widget: string }
+              - label: "Light Sleep"
+                name: lightSleep
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+              - label: "Deep Sleep"
+                name: deepSleep
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+              - label: "REM Sleep"
+                name: remSleep
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+              - { label: "Processes Title", name: processesTitle, widget: string }
+              - label: "Detox"
+                name: detox
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+              - label: "Hormones"
+                name: hormones
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+              - { label: "Melatonin", name: melatonin, widget: text }
+              - { label: "Screen Warning", name: screenWarning, widget: text }
+
+          - label: "Aromatherapy"
+            name: aromatherapy
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - { label: "Introduction", name: intro, widget: text }
+              - { label: "Benefits", name: benefits, widget: text }
+              - { label: "Synergy", name: synergy, widget: text }
+              - { label: "Results", name: results, widget: text }
+              - { label: "Babies", name: babies, widget: text }
+              - { label: "Consultation Required", name: consultationRequired, widget: string }
+              - { label: "Warnings Title", name: warningsTitle, widget: string }
+              - { label: "Warning 1 — Dilution", name: warning1, widget: text }
+              - { label: "Warning 2 — Pregnancy", name: warning2, widget: string }
+              - { label: "Warning 3 — Elderly", name: warning3, widget: text }
+              - { label: "Purchase Warning", name: purchaseWarning, widget: text }
+              - { label: "Summary", name: summary, widget: text }
+              - { label: "AI Disclaimer", name: aiDisclaimer, widget: text }
+              - { label: "Medical Disclaimer", name: medicalDisclaimer, widget: string }
+              - { label: "Closing", name: closing, widget: string }
+
+          - label: "Services"
+            name: services
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - label: "Service Items"
+                name: items
+                widget: object
+                fields:
+                  - label: "Root-Cause Diagnosis"
+                    name: diagnosis
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Nutritional Counseling"
+                    name: nutrition
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Supplements"
+                    name: supplements
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Medicinal Herbs"
+                    name: herbs
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Aromatherapy"
+                    name: aromatherapy
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Bach Flower Essences"
+                    name: bach
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Nopi Candles"
+                    name: hopi
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Reflexology"
+                    name: reflexology
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+                  - label: "Follow-up"
+                    name: followup
+                    widget: object
+                    fields:
+                      - { label: "Title", name: title, widget: string }
+                      - { label: "Description", name: description, widget: text }
+
+          - label: "Workshops & Lectures"
+            name: workshops
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - { label: "Introduction", name: intro, widget: text }
+              - label: "Topics"
+                name: topics
+                widget: object
+                fields:
+                  - { label: "Winter", name: winter, widget: string }
+                  - { label: "Sleep", name: sleep, widget: string }
+                  - { label: "Meditation", name: meditation, widget: string }
+                  - { label: "Aromatherapy", name: aromatherapy, widget: string }
+                  - { label: "Fatigue", name: fatigue, widget: string }
+              - { label: "Booking", name: booking, widget: text }
+              - { label: "Formats", name: formats, widget: string }
+              - { label: "Format Details", name: formatDetails, widget: text }
+
+          - label: "Contact"
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: sectionTitle, widget: string }
+              - { label: "Subtitle", name: subtitle, widget: string }
+              - label: "Form"
+                name: form
+                widget: object
+                fields:
+                  - { label: "Name", name: name, widget: string }
+                  - { label: "Email", name: email, widget: string }
+                  - { label: "Phone", name: phone, widget: string }
+                  - { label: "Message", name: message, widget: string }
+                  - { label: "Submit Button", name: submit, widget: string }
+                  - { label: "Sending Text", name: sending, widget: string }
+                  - { label: "Success Message", name: success, widget: text }
+                  - { label: "Error Message", name: error, widget: text }
+              - { label: "WhatsApp Button", name: whatsapp, widget: string }
+              - { label: "Phone", name: phone, widget: string }
+              - { label: "Email", name: email, widget: string }
+              - { label: "Location", name: location, widget: string }
+
+          - label: "Footer"
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Rights", name: rights, widget: string }
+              - { label: "Medical Disclaimer", name: disclaimer, widget: text }
+              - { label: "Built With", name: builtWith, widget: string }
+              - { label: "Brand Name", name: brand, widget: string }
+
+          - label: "Common"
+            name: common
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Learn More", name: learnMore, widget: string }
+              - { label: "Book Now", name: bookNow, widget: string }
+              - { label: "Back to Top", name: backToTop, widget: string }
