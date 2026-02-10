@@ -24,7 +24,7 @@
     "name": "Ruth Weizman Azulay",
     "credentials": "Naturopath (N.D) & Registered Nurse (B.S.N)",
     "specialization": "Specializing in the treatment of chronic fatigue/exhaustion, sleep disorders, and metabolic syndrome (diabetes, high blood pressure, obesity, insulin resistance).",
-    "approach": "I provide professional, root-cause-based diagnosis, personalized nutritional counseling, supplements, medicinal herbs, aromatherapy extracts, Bach flower essences, Nopi candles, reflexology, and personal follow-up.",
+    "approach": "I provide professional, root-cause-based diagnosis, personalized nutritional counseling, supplements, medicinal herbs, aromatherapy extracts, Bach flower essences, Hopi candles, reflexology, and personal follow-up.",
     "targetAudience": "Women over the age of 40 who are experiencing the above symptoms are welcome to contact me to receive high-quality, professional guidance with a detailed, comprehensive treatment plan and close personal support.",
     "mission": "I view my work as a mission, just as I did when working as a nurse. I deeply love the field of natural healing.",
     "integration": "I integrate naturopathic treatments with conventional medicine, based on my medical knowledge and experience.",
@@ -107,8 +107,8 @@
         "description": "Bach flower essences for emotional and mental balance"
       },
       "hopi": {
-        "title": "Nopi Candles",
-        "description": "Gentle and soothing Nopi candle treatment"
+        "title": "Hopi Candles",
+        "description": "Gentle and soothing Hopi candle treatment"
       },
       "reflexology": {
         "title": "Reflexology",
